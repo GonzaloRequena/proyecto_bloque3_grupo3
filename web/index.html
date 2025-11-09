@@ -1,11 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="author" name="Gonzalo Requena Eslava">
+    <meta content="description" name="Página principal de Cines La Cúpula">
+    <meta content="keywords" name="Cines, Cartelera, Promociones, Taquilla, Contacto, Web, Bootstrap, Películas">
+    <title>Cines La Cúpula - Portada</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="css/index_style.css">
 </head>
+
 <body>
-    
+
+    <!-- ======================= HEADER / NAVBAR ======================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo y Nombre del Cine -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo2.png" alt="Logo Cines La Cúpula" width="auto" height="40"
+                        class="d-inline-block align-text-top me-2">
+                </a>
+
+                <!-- Botón de Hamburguesa (para dispositivos pequeños) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+
+                <!-- Enlaces de Navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cartelera">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main class="container my-5">
+
+        <!-- Contenedor de Reestreno de la Semana (Tarjeta destacada) -->
+        <section class="mb-5 p-4 p-md-5 text-center rounded-3 reestreno-jumbotron">
+            <h1 class="display-5 fw-bold text-uppercase" style="color: var(--light-blue);">¡El Reestreno de la Semana!
+            </h1>
+            <p class="fs-4">"Jumanji" en 4K.</p>
+            <p class="lead mb-4">
+                Revive las aventuras de este clásico en la pantalla gigante. Entradas ya disponibles en Taquilla.
+            </p>
+            <a href="taquilla.html" class="btn btn-primary btn-lg fw-bold"
+                style="background-color: var(--light-blue); border-color: var(--light-blue); color: var(--dark-blue);">
+                Comprar entradas ahora
+            </a>
+        </section>
+
+        <!-- Carrusel de Promociones (Sin JS personalizado) -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4 border-bottom pb-2" style="border-color: var(--light-blue) !important;">
+                Promociones Destacadas</h2>
+            <div id="promotionsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <!-- Promoción 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <h3 class="text-uppercase" style="color: var(--light-blue);">Día del Espectador</h3>
+                            <p class="fs-5">Todos los Miércoles, entradas a mitad de precio. ¡Una oferta que no puedes
+                                rechazar!</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Promoción 2 -->
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <h3 class="text-uppercase" style="color: var(--light-blue);">Pack Palomitas Doble</h3>
+                            <p class="fs-5">Dos bebidas y dos palomitas grandes por el precio de una. Perfecto para
+                                parejas.</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Promoción 3 -->
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <h3 class="text-uppercase" style="color: var(--light-blue);">Bono Familiar</h3>
+                            <p class="fs-5">Entrada y menú combo para 4 personas a un precio imbatible.</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del Carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#promotionsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promotionsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cartelera (8 Películas en Grid) -->
+        <section id="cartelera">
+            <h2 class="text-center mb-4 border-bottom pb-2" style="border-color: var(--light-blue) !important;">Nuestra
+                Cartelera</h2>
+            <div class="row g-4">
+
+                <!-- Película 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula1.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <!-- Placeholder de Imagen -->
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=AVENTURA+ÉPICA"
+                                class="card-img-top" alt="Aventura Épica">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">Aventura
+                                    Épica: El Nuevo Desafío</h5>
+                                <p class="card-text small m-0">Acción, Fantasía | 130 min</p>
+                                <p class="card-text small text-warning">⭐ 4.5</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula2.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=COMEDIA+ROMÁNTICA"
+                                class="card-img-top" alt="Comedia Romántica">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">Risas y
+                                    Cita a Ciegas</h5>
+                                <p class="card-text small m-0">Comedia, Romance | 98 min</p>
+                                <p class="card-text small text-warning">⭐ 3.8</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula3.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=THRILLER+MISTERIO"
+                                class="card-img-top" alt="Thriller Misterio">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">La Casa
+                                    del Silencio</h5>
+                                <p class="card-text small m-0">Thriller, Misterio | 115 min</p>
+                                <p class="card-text small text-warning">⭐ 4.2</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula4.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=CIENCIA+FICCIÓN"
+                                class="card-img-top" alt="Ciencia Ficción">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">Viaje a
+                                    Plutón: Origen</h5>
+                                <p class="card-text small m-0">Ciencia Ficción | 145 min</p>
+                                <p class="card-text small text-warning">⭐ 4.7</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 5 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula5.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=DRAMA+HISTÓRICO"
+                                class="card-img-top" alt="Drama Histórico">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">El Legado
+                                    de la Reina</h5>
+                                <p class="card-text small m-0">Drama, Histórico | 122 min</p>
+                                <p class="card-text small text-warning">⭐ 4.1</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 6 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula6.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=INFANTIL+ANIMACIÓN"
+                                class="card-img-top" alt="Infantil Animación">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">El
+                                    Pingüino Saltarín</h5>
+                                <p class="card-text small m-0">Infantil, Animación | 85 min</p>
+                                <p class="card-text small text-warning">⭐ 4.0</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 7 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula7.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=TERROR+SOBRENATURAL"
+                                class="card-img-top" alt="Terror Sobrenatural">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">La
+                                    Maldición del Faro</h5>
+                                <p class="card-text small m-0">Terror, Sobrenatural | 105 min</p>
+                                <p class="card-text small text-warning">⭐ 3.5</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 8 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas_peliculas/pelicula8.html" class="text-decoration-none text-white">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="https://placehold.co/400x600/1e293b/38bdf8?text=DOCUMENTAL+NATURA"
+                                class="card-img-top" alt="Documental Natura">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold" style="color: var(--light-blue);">Los
+                                    Secretos del Amazonas</h5>
+                                <p class="card-text small m-0">Documental | 90 min</p>
+                                <p class="card-text small text-warning">⭐ 4.6</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Columna 1: Información de Contacto -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Cines La Cúpula</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+                </div>
+
+                <!-- Columna 2: Horarios -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Horarios</h5>
+                    <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
+                    <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
+                    <p class="m-0">Festivos: Consulta la cartelera</p>
+                </div>
+
+                <!-- Columna 3: Enlaces Rápidos -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="cartelera.html" class="text-white text-decoration-none">Cartelera</a></li>
+                        <li><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- ======================= BOOTSTRAP JS (NECESARIO PARA NAVBAR Y CARRUSEL) ======================= -->
+    <!-- Incluye Popper y el JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

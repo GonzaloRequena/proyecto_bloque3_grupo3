@@ -1,0 +1,89 @@
+/* Variables y Estilos personalizados */
+:root {
+    --dark-blue: #0f172a;
+    /* Fondo principal (Slate-900) */
+    --light-blue: #38bdf8;
+    /* Color de acento (Sky-400) */
+    --text-color: #f8fafc;
+    /* Texto principal (White/Light) */
+    --secondary-dark: #1e293b;
+    /* Fondo de secciones/tarjetas (Slate-800) */
+}
+
+body {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos específicos del Navbar */
+.navbar {
+    background-color: var(--secondary-dark);
+    /* Navbar un poco más claro que el fondo del body */
+    border-bottom: 3px solid var(--light-blue);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--light-blue) !important;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: var(--secondary-dark);
+    border-top: 3px solid var(--light-blue);
+    padding: 2rem 0;
+    margin-top: auto;
+    /* Empuja el footer hacia abajo */
+}
+
+/* Estilos para las tarjetas de películas */
+.movie-card {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--light-blue);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    /* Para contener la imagen */
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+    /* Sombra de acento */
+}
+
+.movie-card img {
+    height: 350px;
+    /* Altura fija para portadas */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Estilo para el contenedor de reestreno */
+.reestreno-jumbotron {
+    background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--dark-blue) 100%);
+    border: 2px solid var(--light-blue);
+}
+
+/* Estilos para el carrusel de promociones */
+.carousel-item {
+    background-color: var(--secondary-dark);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--light-blue);
+    border-radius: 50%;
+}
