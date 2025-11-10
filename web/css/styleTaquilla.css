@@ -62,10 +62,12 @@ footer {
     margin-top: auto;
     /* Empuja el footer hacia abajo */
 }
+
 /*Logos redes*/
 .logopie {
     width: 50px;
 }
+
 /*=====TAQUILLA PRECIO=====*/
 /*Barra progreso*/
 .progress {
@@ -73,7 +75,8 @@ footer {
 }
 
 .progress-bar.datos {
-    width: 50%; /* progreso real según etapa */
+    width: 50%;
+    /* progreso real según etapa */
 }
 
 .progress-bar.pago {
@@ -82,7 +85,7 @@ footer {
 }
 
 .position-absolute.btn-barra {
-  top: -1rem;
+    top: -1rem;
 }
 
 .btn-preciopago {
@@ -94,11 +97,16 @@ footer {
     width: 8rem;
     height: 2rem;
 }
+
 /*Tarjetas-Combo*/
 .card.combo {
     max-width: 540px;
-    
+    background-color: var(--secondary-dark);
+    border-top: 3px solid var(--light-blue);
+
+
 }
+
 .ctn-inp {
     width: 80px;
 }
@@ -107,6 +115,7 @@ footer {
 .card.reestrenoprecio {
     width: 25rem;
     height: 44rem;
+    
 }
 
 .card.reestrenodatopago {
@@ -116,6 +125,6 @@ footer {
 /*=====TAQUILLA PAGO =====*/
 /*Metodos de pago*/
 
- .card.metodo-pago {
+.card.metodo-pago {
     max-width: 50rem;
- }
+}
