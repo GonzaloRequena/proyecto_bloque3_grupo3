@@ -1,0 +1,218 @@
+/* ===================== FUENTE ===================== */
+/* Cargando la fuente 'Nunito' para asegurar una tipografía consistente y legible en toda la web. */
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* ===================== VARIABLES ===================== */
+/* Defino las variables de color para facilitar la gestión del tema oscuro y los acentos. */
+:root {
+  --dark-blue: #0f172a;      /* Color de fondo principal, el más oscuro. */
+  --light-blue: #38bdf8;     /* Color de acento usado para títulos y bordes. */
+  --text-color: #f8fafc;     /* Color del texto principal (casi blanco). */
+  --secondary-dark: #1e293b; /* Color para fondos secundarios, como navbar y tarjetas. */
+}
+
+/* ===================== BASE ===================== */
+/* Estilos fundamentales aplicados al cuerpo de la página. */
+body {
+  background-color: var(--dark-blue); /* Aplica el fondo principal oscuro. */
+  color: var(--text-color);           /* Establece el color de texto por defecto. */
+  min-height: 100vh;                  /* Asegura que el contenido ocupe al menos la altura de la ventana. */
+  display: flex;                      /* Configuración Flexbox para el layout principal. */
+  flex-direction: column;             /* Permite que el footer se fije abajo usando margin-top: auto. */
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  background-color: var(--secondary-dark); /* Fondo del menú de navegación. */
+  border-bottom: 3px solid var(--light-blue); /* Línea de acento en la parte inferior. */
+}
+
+/* Estilos para el logo y los enlaces de navegación. */
+.navbar-brand,
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+/* Efecto hover en los enlaces de navegación. */
+.nav-link:hover {
+  color: var(--light-blue) !important; /* Cambia el color al acento. */
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background-color: var(--secondary-dark);
+  border-top: 3px solid var(--light-blue); /* Línea de acento en la parte superior. */
+  padding: 2rem 0;
+  margin-top: auto; /* Empuja el pie de página hacia el final (gracias al flex-direction: column del body). */
+  color: var(--text-color);
+}
+
+/* ===================== TITULOS Y TEXTOS ===================== */
+/* Todos los encabezados usan el color de acento. */
+h1, h2, h3, h4, h5 {
+  color: var(--light-blue);
+}
+
+/* Personalización para el texto mutado de Bootstrap, asegurando contraste en el tema oscuro. */
+.text-muted {
+  color: #cbd5e1 !important;
+}
+
+/* ===================== PÓSTER ===================== */
+/* Estilos para la imagen del póster. */
+img.img-fluid {
+  border: 2px solid var(--light-blue); /* Borde de acento alrededor del póster. */
+  border-radius: 10px;
+}
+
+/* ===================== BLOQUES Y TARJETAS ===================== */
+/* Estilos para la Ficha Técnica (que usa la clase .bg-white de Bootstrap). */
+.bg-white {
+  background-color: var(--secondary-dark) !important; /* Sobreescribe el blanco por el fondo secundario. */
+  border: 1px solid var(--light-blue);
+  color: var(--text-color);
+}
+
+/* Destaco los elementos <strong> dentro de la lista de la ficha técnica. */
+.bg-white ul li strong {
+  color: var(--light-blue);
+}
+
+/* ===================== BOTONES ===================== */
+/* Estilo para botones primarios (ej: "Ver Tráiler"). */
+.btn-primary {
+  background-color: var(--light-blue);
+  border: none;
+  font-weight: 600;
+  color: var(--dark-blue); /* Uso el color más oscuro para el texto para máximo contraste. */
+}
+
+.btn-primary:hover {
+  background-color: #7dd3fc;
+  color: var(--dark-blue);
+}
+
+/* Estilo para botones outline (ej: horarios de "Comprar"). */
+.btn-outline-primary {
+  border: 2px solid var(--light-blue);
+  color: var(--light-blue);
+  font-weight: 600;
+}
+
+/* Efecto hover para botones outline. */
+.btn-outline-primary:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+/* ===================== SELECTOR DE FECHAS ===================== */
+/* Personalización del selector de fechas (form-select). */
+.form-select {
+  background-color: var(--secondary-dark);
+  color: var(--text-color);
+  border: 1px solid var(--light-blue);
+}
+
+/* Efecto visual al enfocar el selector. */
+.form-select:focus {
+  border-color: var(--light-blue);
+  box-shadow: 0 0 5px var(--light-blue);
+}
+
+/* ===================== SINOPSIS ===================== */
+/* Estilos para el bloque de la sinopsis. */
+.synopsis-section {
+  background-color: var(--secondary-dark);
+  padding: 2rem;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid var(--light-blue);
+}
+
+/* ===================== MODAL DEL TRÁILER  ===================== */
+/* Configuración base para el modal del tráiler (oculto por defecto). */
+.trailer-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8); /* Fondo semitransparente oscuro. */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+/* Muestra el modal cuando el target coincide con el fragmento del URL. */
+.trailer-modal:target {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.trailer-content {
+  background: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  border: 2px solid var(--light-blue);
+}
+
+.trailer-content video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Botón para cerrar el modal. */
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 2rem;
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  color: #7dd3fc;
+}
+
+/* Animación suave al abrir */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Estilos redundantes eliminados en la optimización anterior, pero restaurados para la revisión. */
+.detalles {
+  color:white
+}
+.sesiones {
+  color:white
+}
+.horas {
+  color:white
+}
+
+/* ===================== RESPONSIVE ===================== */
+/* Media query para ajustes en dispositivos móviles (hasta 768px). */
+@media (max-width: 768px) {
+  .synopsis-section {
+    padding: 1.5rem;
+  }
+
+  .trailer-content {
+    width: 95%;
+  }
+
+  img.img-fluid {
+    width: 100%; /* El póster ocupa todo el ancho en móvil. */
+  }
+}
