@@ -56,17 +56,32 @@
             <h2 class="combo-title">Combos</h2>
 
                 <!-- Combo 1 -->
-                <div class="combo-item">
-                    <img src="img/MiniTrailer.png" alt="Combo MiniTrailer">
-                    <div class="combo-content">
-                        <h4>Mini Trailer</h4>
-                        <ul>
-                            <li>Palomitas pequeñas</li>
-                            <li>Refresco pequeño</li>
-                        </ul>
-                        <p>Ligero y práctico para disfrutar de una sesión individual</p>
-                        <div class="combo-price">4,90 €</div>
-                        <button class="btn btn-custom">Añadir al pedido</button>
+                <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+
+                        <!-- Frente -->
+                        <div class="flip-card-front">
+                            <img src="img/MiniTrailer.png" alt="Combo Mini Trailer" class="w-100" style="border-radius:15px;">
+                            <div class="card-body text-center">
+                            <h4 class="card-title">Mini Trailer</h4>
+                            <p class="combo-price mb-0"><strong class="texto-destacado">4,90 €</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Reverso -->
+                        <div class="flip-card-back">
+                            <h4>Incluye</h4>
+                            <ul class="list-unstyled">
+                            <li>🍿 Palomitas pequeñas</li>
+                            <li>🥤 Refresco pequeño</li>
+                            </ul>
+                            <p class="mt-2">Ligero y práctico para disfrutar de una sesión individual.</p>
+                            <form action="taquillaPrecio.html">
+                            <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                            </form>
+                        </div>
+                        </div>
                     </div>
                 </div>
 
@@ -74,7 +89,7 @@
                 <div class="combo-item">
                     <img src="img/CorteClasico.png" alt="Combo Clasico">
                     <div class="combo-content">
-                        <h4>Combo Corte Clasico</h4>
+                        <h4>Combo Corte Clásico</h4>
                         <ul>
                             <li>Palomitas medianas</li>
                             <li>Refresco mediano</li>

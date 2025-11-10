@@ -55,86 +55,172 @@
         <h2 class="promo-title">Promociones LaCúpula</h2>
 
         <div class="row g-4 justify-content-center">
-            <!-- 1. Película de Reestreno -->
+            <!-- 1. REESTRENO -->
             <div class="col-sm-10 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="img/reestreno.jpg" alt="Reestreno Jumanji">
+                    <img src="img/jumanji.jpeg" alt="Reestreno Jumanji">
                     <div class="card-body">
                         <h5 class="card-title">Reestreno de JumanJi</h5>
                         <p class="card-text">Revive la clásica película de JumanJi en pantalla grande a precio especial. ¡Solo por tiempo limitado!</p>
-                        <button class="btn btn-custom">Comprar entradas</button>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#reestrenoModal">Comprar entradas</button>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Película de Preestreno -->
+            <!-- MODAL REESTRENO -->
+            <div class="modal fade" id="reestrenoModal" tabindex="-1" aria-labelledby="reestrenoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/jumanji.jpeg" alt="Reestreno Jumanji">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="reestrenoModalLabel">Reestreno Jumanji</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. PREESTRENO -->
             <div class="col-sm-10 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="img/preestreno.jpg" alt="Preestreno Avatar3">
+                    <img src="img/avatar.jpg" alt="Preestreno Avatar3">
                     <div class="card-body">
                         <h5 class="card-title">Avatar en Preestreno</h5>
                         <p class="card-text">Sé de los primeros en disfrutar el estreno de Avatar: Fuego y Cenizas. ¡Entradas limitadas!</p>
-                        <button class="btn btn-custom">Comprar entradas</button>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#preestrenoModal">Comprar entradas</button>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Fiesta del Cine -->
+            <!-- MODAL PREESTRENO -->
+            <div class="modal fade" id="preestrenoModal" tabindex="-1" aria-labelledby="preestrenoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/avatar.jpg" alt="Preestreno Avatar3">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="preestrenoModalLabel">Preestreno Avatar: Fuego y Cenizas</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. FIESTA DEL CINE -->
             <div class="col-sm-10 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="img/fiesta_cine.jpg" alt="Fiesta del Cine">
+                    <img src="img/FiestaDelCine.png" alt="Fiesta del Cine">
                     <div class="card-body">
                         <h5 class="card-title">Fiesta del Cine</h5>
                         <p class="card-text">Entradas a precios reducidos para celebrar la pasión por el cine. ¡No te la pierdas!</p>
-                        <button class="btn btn-custom">Más info</button>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#fiestaModal">Más info</button>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="fiestaModal" tabindex="-1" aria-labelledby="fiestaModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content" style="background-color:#10294d; color:white; border-radius:15px;">
+            <!-- MODAL FIESTA DEL CINE-->
+            <div class="modal fade" id="fiestaModal" tabindex="-1" aria-labelledby="fiestaModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/FiestaDelCine.png" alt="Fiesta del cine">
                         <div class="modal-header border-0">
                             <h5 class="modal-title" id="fiestaModalLabel">Fiesta del Cine</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Durante tres días podrás disfrutar todas las películas por solo <strong>3,50 €</strong> cada entrada.</p>
-                            <p>Apunta las fechas: del <strong>10 al 12 de marzo</strong> en todos los cines LaCúpula.</p>
-                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros</p>
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
                         </div>
                         <div class="modal-footer border-0">
-                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Cerrar</button>
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Promo 4 entradas -->
+            <!-- 4. PROMO 4 ENTRADAS -->
             <div class="col-sm-10 col-md-6 col-lg-4">
                 <div class="card h-100">
-                <img src="img/promo4.jpg" alt="Promo 4 entradas">
-                <div class="card-body">
-                    <h5 class="card-title">Pack Familiar</h5>
-                    <p class="card-text">Disfruta 4 entradas a un precio reducido. Ideal para venir en grupo o familia.</p>
-                    <button class="btn btn-custom">Aprovechar promo</button>
-                </div>
+                    <img src="img/PromoEntradas.png" alt="Promo 4 entradas">
+                    <div class="card-body">
+                        <h5 class="card-title">Pack Familiar</h5>
+                        <p class="card-text">Disfruta 4 entradas a un precio reducido. Ideal para venir en grupo o familia.</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#promoModal">Aprovechar promo</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- 5. Sorteo -->
-            <div class="col-sm-10 col-md-6 col-lg-4">
-                <div class="card h-100">
-                <img src="img/sorteo.jpg" alt="Sorteo">
-                <div class="card-body">
-                    <h5 class="card-title">Sorteo Mensual</h5>
-                    <p class="card-text">Participa y gana entradas gratis, combos y más sorpresas. ¡Participa ya!</p>
-                    <button class="btn btn-custom">Participar</button>
-                </div>
+            <!-- MODAL PROMO ENTRADAS -->
+            <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/PromoEntradas.png" alt="Promo 4 entradas">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="promoModalLabel">Fiesta del Cine</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- 6. Combos -->
+            <!-- 5. SORTEO -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/sorteo.jpg" alt="Sorteo">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorteo Mensual</h5>
+                        <p class="card-text">Participa y gana entradas gratis, combos y más sorpresas. ¡Participa ya!</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#sorteoModal">Participar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL SORTEO -->
+            <div class="modal fade" id="sorteoModal" tabindex="-1" aria-labelledby="sorteoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/FiestaDelCine.png" alt="Fiesta del cine">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="sorteoModalLabel">Fiesta del Cine</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. COMBOS -->
             <div class="col-sm-10 col-md-6 col-lg-4">
                 <div class="card h-100">
                     <img src="img/mini_trailer.jpg" alt="Combo Comida">
@@ -183,6 +269,5 @@
             &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
