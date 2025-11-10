@@ -8,7 +8,7 @@
         <meta name="author" content="Pilar Parra">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index_style.css">
         <link rel="stylesheet" href="css/promociones.css">
         <link rel="stylesheet" href="css/combo.css">
         <title>Promociones</title>
@@ -53,70 +53,109 @@
         <!-- ======================= MAIN CONTENT ======================= -->
         <main>
             <section class="combos-section container">
-            <h2 class="combo-title">🍿 Combos de LaCúpula</h2>
+            <h2 class="combo-title">Combos</h2>
 
-            <!-- Combo 1 -->
-            <div class="combo-item">
-            <img src="img/MiniTrailer.png" alt="Combo Mini Trailer">
-            <div class="combo-content">
-                <h4>Mini Trailer</h4>
-                <p>Palomitas pequeñas y refresco mediano. Ideal para una sesión individual.</p>
-                <div class="combo-price">4,90 €</div>
-                <button class="btn btn-custom">Añadir al pedido</button>
-            </div>
-            </div>
-
-            <!-- Combo 2 -->
-            <div class="combo-item">
-            <img src="img/combo_familiar.jpg" alt="Combo Familiar">
-            <div class="combo-content">
-                <h4>Combo Familiar</h4>
-                <p>Palomitas grandes, 2 refrescos medianos y un snack dulce. Perfecto para compartir.</p>
-                <div class="combo-price">9,90 €</div>
-                <button class="btn btn-custom">Añadir al pedido</button>
-            </div>
-            </div>
-
-            <!-- Combo 3 -->
-            <div class="combo-item">
-            <img src="img/combo_pareja.jpg" alt="Combo Pareja">
-            <div class="combo-content">
-                <h4>Combo Pareja</h4>
-                <p>Palomitas grandes y dos refrescos grandes. Ideal para disfrutar juntos la función.</p>
-                <div class="combo-price">8,50 €</div>
-                <button class="btn btn-custom">Añadir al pedido</button>
-            </div>
-            </div>
-
-            <!-- Combo 4 -->
-            <div class="combo-item">
-            <img src="img/combo_dulce.jpg" alt="Combo Dulce">
-            <div class="combo-content">
-                <h4>Combo Dulce</h4>
-                <p>Palomitas de caramelo y refresco pequeño. El toque dulce para tu película.</p>
-                <div class="combo-price">5,50 €</div>
-                <button class="btn btn-custom">Añadir al pedido</button>
-            </div>
-            </div>
-
-            <!-- Combo 5 -->
-            <div class="combo-item">
-            <img src="img/combo_express.jpg" alt="Combo Express">
-            <div class="combo-content">
-                <h4>Combo Express</h4>
-                <p>Mini palomitas y botella de agua. Ligero y práctico para sesiones rápidas.</p>
-                <div class="combo-price">3,90 €</div>
-                <button class="btn btn-custom">Añadir al pedido</button>
-            </div>
-            </div>
-
-            <!-- Combo 6 -->
+                <!-- Combo 1 -->
                 <div class="combo-item">
-                    <img src="img/combo_premium.jpg" alt="Combo Premium">
+                    <img src="img/MiniTrailer.png" alt="Combo MiniTrailer">
                     <div class="combo-content">
-                        <h4>Combo Premium</h4>
-                        <p>Palomitas grandes, refresco grande y nachos con queso. ¡La experiencia completa!</p>
-                        <div class="combo-price">10,90 €</div>
+                        <h4>Mini Trailer</h4>
+                        <ul>
+                            <li>Palomitas pequeñas</li>
+                            <li>Refresco pequeño</li>
+                        </ul>
+                        <p>Ligero y práctico para disfrutar de una sesión individual</p>
+                        <div class="combo-price">4,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 2 -->
+                <div class="combo-item">
+                    <img src="img/CorteClasico.png" alt="Combo Clasico">
+                    <div class="combo-content">
+                        <h4>Combo Corte Clasico</h4>
+                        <ul>
+                            <li>Palomitas medianas</li>
+                            <li>Refresco mediano</li>
+                        </ul>
+                        <p>Perfecto para disfrutar del mejor sabor</p>
+                        <div class="combo-price">7,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 3 -->
+                <div class="combo-item">
+                    <img src="img/DobleFuncion.png" alt="Combo Dúo Doble Función">
+                    <div class="combo-content">
+                        <h4>Combo Doble Función</h4>
+                        <ul>
+                            <li>2 Palomitas medianas</li>
+                            <li>2 Refrescos medianos</li>
+                        </ul>
+                        <p>Ideal para disfrutar juntos la función</p>
+                        <div class="combo-price">9,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 4 -->
+                <div class="combo-item">
+                    <img src="img/EstrenoFamiliar.png" alt="Combo Estreno Familiar">
+                    <div class="combo-content">
+                        <h4>Combo Estreno Familiar</h4>
+                        <ul>
+                            <li>Palomitas grandes</li>
+                            <li>2 Refrescos medianos</li>
+                        </ul>
+                        <p>El toque salado para disfrutar de tu película en familia</p>
+                        <div class="combo-price">12,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 5 -->
+                <div class="combo-item">
+                    <img src="img/ComboBlockbuster2.PNG" alt="Combo BlockBuster">
+                    <div class="combo-content">
+                        <h4>Combo BlockBuster</h4>
+                        <ul>
+                            <li>Palomitas grandes</li>
+                            <li>2 Refrescos medianos</li>
+                        </ul>
+                        <p>Atrévete a lo grande. El combo que te dejará sin hambre. ¡La experiencia completa!</p>
+                        <div class="combo-price">15,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 6 -->
+                <div class="combo-item">
+                    <img src="img/ComboAvatarEdicionDeluxe.png" alt="Combo Edición Deluxe Avatar">
+                    <div class="combo-content">
+                        <h4>Combo Edición Deluxe Avatar</h4>
+                        <ul>
+                            <li>Palomitas grandes</li>
+                            <li>Refresco mediano</li>
+                        </ul>
+                        <p>Disfruta del mejor sabor y llévate tu vaso favorito. ¡Brilla en la oscuridad! </p>
+                        <div class="combo-price">18,90 €</div>
+                        <button class="btn btn-custom">Añadir al pedido</button>
+                    </div>
+                </div>
+
+                <!-- Combo 7 -->    
+                <div class="combo-item">
+                    <img src="img/ComboJumanjiEdicionDeluxe.png" alt="Combo Edición Deluxe JumanJi">
+                    <div class="combo-content">
+                        <h4>Combo Edición Deluxe JumanJi</h4>
+                        <ul>
+                            <li>Palomitas grandes</li>
+                            <li>Refresco mediano</li>
+                        </ul>
+                        <p>Para que además de disfrutar de tu sesión te lleves el cubo de tu peli favorita</p>
+                        <div class="combo-price">18,90 €</div>
                         <button class="btn btn-custom">Añadir al pedido</button>
                     </div>
                 </div>
