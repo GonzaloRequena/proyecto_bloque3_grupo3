@@ -12,47 +12,49 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
+  <link rel="stylesheet" href="css/index_style.css">
   <link rel="stylesheet" href="css/styleTaquilla.css">
   <title>Taquilla</title>
 </head>
 
 <body>
   <!-- ======================= HEADER / NAVBAR ======================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Logo y Nombre del Cine -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="img/logo2.png" alt="Logo Cines La Cúpula" width="auto" height="40"
-            class="d-inline-block align-text-top me-2">
-        </a>
+  <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
 
-        <!-- Botón de Hamburguesa (para dispositivos pequeños) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-        </button>
+                <!-- Logo del Cine -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo Cines La Cúpula" width="auto" height="40"
+                        class="d-inline-block align-text-top me-2">
+                </a>
 
-        <!-- Enlaces de Navegación -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#cartelera">Cartelera</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+                <!-- Botón del menú hamburguesa  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#cartelera">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
   <!-- ======================= MAIN / SECTION ======================= -->
   <main>
     <section>
@@ -227,41 +229,39 @@
   </main>
   <!-- ======================= FOOTER ======================= -->
   <footer>
-    <div class="container text-center text-md-start">
-      <div class="row">
-        <!-- Columna 1: Información de Contacto -->
-        <div class="col-md-4 mb-3 mb-md-0">
-          <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Cines La Cúpula</h5>
-          <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
-          <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
-          <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Columna 1: Información de Contacto -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold footer-heading">Cines La Cúpula</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+                </div>
+
+                <!-- Columna 2: Horarios -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold footer-heading">Horarios</h5>
+                    <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
+                    <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
+                    <p class="m-0">Festivos: Consulta la cartelera</p>
+                </div>
+
+                <!-- Columna 3: Enlaces a redes sociales -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 fw-bold text-center footer-heading">Redes Sociales</h5>
+                    <div class="d-flex justify-content-center mb-3">
+                        <a href="#"><img src="img/instagram.svg" alt="Instagram" class="logopie"></a>
+                        <a href="#"><img src="img/facebook.svg" alt="Facebook" class="logopie"></a>
+                        <a href="#"><img src="img/x4.svg" alt="X" class="logopie"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Columna 2: Horarios -->
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Horarios</h5>
-          <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
-          <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
-          <p class="m-0">Festivos: Consulta la cartelera</p>
+        <div class="text-center p-3 mt-4 footer-bottom">
+            &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
         </div>
-
-
-
-        <!-- Columna 3: Enlaces Rápidos -->
-        <div class="col-md-4  " >
-          <h5 class="text-uppercase mb-4 fw-bold text-center" style="color: var(--light-blue);">Redes</h5>
-          <div class="d-flex justify-content-around mb-3">
-            <a href="#"><img src="img/instagram.svg" alt="Instagram" class="logopie"></a>
-            <a href="#"><img src="img/facebook.svg" alt="Facebook" class="logopie"></a>
-            <a href="#"><img src="img/x4.svg" alt="X" class="logopie"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center p-3 mt-4">
-      &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
-    </div>
-  </footer>
+    </footer>
   <!--VALIDACIÓN FORMULARIOS-->
   <script src="js/validacion.js"></script>
 </body>

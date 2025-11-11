@@ -4,11 +4,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="author" name="Gonzalo Requena Eslava">
+    <meta content="description" name="Página principal de Cines La Cúpula">
+    <meta content="keywords" name="Cines, Cartelera, Promociones, Taquilla, Contacto, Web, Bootstrap, Películas">
+    <title>Cines La Cúpula - Portada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="css/index_style.css">
 </head>
 
 <body>
-    
+
+    <!-- ======================= HEADER / NAVBAR ======================= -->
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <!-- Logo del Cine -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo Cines La Cúpula" width="auto" height="40"
+                        class="d-inline-block align-text-top me-2">
+                </a>
+
+                <!-- Botón del menú hamburguesa  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#cartelera">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main class="container my-5">
+
+        <!-- Contenedor de reestreno de la semana -->
+        <section class="mb-5 p-4 p-md-5 text-center rounded-3 seccion-reestreno">
+            <h1 class="display-5 fw-bold text-uppercase reestreno-titulo">¡El Reestreno de la Semana!</h1>
+            <p class="fs-4">"Jumanji" en 4K.</p>
+            <p class="lead mb-4">
+                Revive las aventuras de este clásico en la gran pantalla. Entradas ya disponibles en Taquilla.
+            </p>
+            <a href="taquillaPrecio.html" class="btn btn-primary btn-lg fw-bold reestreno-btn">
+                Comprar entradas ahora
+            </a>
+        </section>
+
+        <!-- Carrusel de promociones -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4 border-bottom pb-2 section-heading" id="promociones">
+                Promociones Destacadas</h2>
+            <div id="carruselPromos" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <!-- Promoción 1 -->
+                    <div class="carousel-item active" id="promo1">
+                        <div class="d-block w-100 carousel-content">
+                            <h3 class="text-uppercase promo-titulo">Fiesta del cine</h3>
+                            <p class="fs-5">Ven esta semana a celebrar la Fiesta del Cine. Menús a precio especial. ¡Una
+                                oferta que no puedes rechazar!</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Promoción 2 -->
+                    <div class="carousel-item" id="promo2">
+                        <div class="d-block w-100 carousel-content">
+                            <h3 class="text-uppercase promo-titulo">Menú Deluxe Preestreno</h3>
+                            <p class="fs-5">Disfruta de la Edición Deluxe con el preestreno de Avatar: Fuego y Ceniza.
+                                ¡Llévate a casa un vaso exclusivo!</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Promoción 3 -->
+                    <div class="carousel-item" id="promo3">
+                        <div class="d-block w-100 carousel-content">
+                            <h3 class="text-uppercase promo-titulo">Menú Especial Reestreno</h3>
+                            <p class="fs-5">¡Acompáñanos a disfrutar del reestreno de esta semana y disfruta de un menú
+                                especial a precio reducido!</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Promoción 4 -->
+                    <div class="carousel-item" id="promo4">
+                        <div class="d-block w-100 carousel-content">
+                            <h3 class="text-uppercase promo-titulo">Oferta "Vuelve al cine"</h3>
+                            <p class="fs-5">Compra 4 entradas a un precio especial durante todo el fin de semana. ¡No te
+                                lo pierdas!</p>
+                            <a href="promociones.html" class="btn btn-outline-light btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselPromos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselPromos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cartelera (8 Películas en Grid) -->
+        <section id="cartelera">
+            <h2 class="text-center mb-4 border-bottom pb-2 section-heading">Nuestra Cartelera</h2>
+            <div class="row g-4">
+
+                <!-- Película 1: AVATAR 3 (Preestreno) -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/Avatar.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <!-- Etiqueta de preestreno -->
+                            <span class="movie-badge preestreno">PREESTRENO</span>
+                            <img src="img/avatar.jpeg" class="card-img-top" alt="Avatar 3">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">Avatar: Fuego y Ceniza</h5>
+                                <p class="card-text small m-0 movie-info-text">Ciencia Ficción, Aventura | 192 min</p>
+                                <p class="card-text small text-warning">⭐ 4.9</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 2: EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/ElSeñorDeLosAnillos.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/ElSeñorDeLosAnillos2.jpeg" class="card-img-top" alt="Las Dos Torres">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">El Señor de los Anillos: Las
+                                    Dos Torres</h5>
+                                <p class="card-text small m-0 movie-info-text">Fantasía, Aventura | 179 min</p>
+                                <p class="card-text small text-warning">⭐ 4.7</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 3: IRON MAN -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/IronMan.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/iron man.jpeg" class="card-img-top" alt="Iron Man">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">Iron Man</h5>
+                                <p class="card-text small m-0 movie-info-text">Acción, Superhéroes | 126 min</p>
+                                <p class="card-text small text-warning">⭐ 4.5</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 4: IT -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/IT.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/IT.jpeg" class="card-img-top" alt="IT">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">IT (Eso)</h5>
+                                <p class="card-text small m-0 movie-info-text">Terror | 135 min</p>
+                                <p class="card-text small text-warning">⭐ 4.0</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 5: JUMANJI (Reestreno) -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/Jumanji.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <!-- Etiqueta de reestreno -->
+                            <span class="movie-badge reestreno">REESTRENO</span>
+                            <img src="img/jumanji.jpeg" class="card-img-top" alt="Jumanji">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">Jumanji</h5>
+                                <p class="card-text small m-0 movie-info-text">Aventura, Fantasía | 104 min</p>
+                                <p class="card-text small text-warning">⭐ 4.3</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 6: LA LLEGADA -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/LaLlegada.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/la llegada.jpeg" class="card-img-top" alt="La Llegada">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">La Llegada (Arrival)</h5>
+                                <p class="card-text small m-0 movie-info-text">Ciencia Ficción, Drama | 116 min</p>
+                                <p class="card-text small text-warning">⭐ 4.6</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 7: OPPENHEIMER -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/Oppenheimer.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/Oppenheimer.jpeg" class="card-img-top" alt="Oppenheimer">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">Oppenheimer</h5>
+                                <p class="card-text small m-0 movie-info-text">Biografía, Drama | 180 min</p>
+                                <p class="card-text small text-warning">⭐ 4.8</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Película 8: ORGULLO Y PREJUICIO -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="fichas/OrgulloYPrejuicio.html" class="text-decoration-none text-white movie-link">
+                        <div class="card h-100 movie-card rounded-3">
+                            <img src="img/orgulloYprejuicio.jpeg" class="card-img-top" alt="Orgullo y Prejuicio">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate fw-bold movie-title">Orgullo y Prejuicio</h5>
+                                <p class="card-text small m-0 movie-info-text">Romance, Drama | 129 min</p>
+                                <p class="card-text small text-warning">⭐ 4.4</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Columna 1: Información de Contacto -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold footer-heading">Cines La Cúpula</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+                </div>
+
+                <!-- Columna 2: Horarios -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold footer-heading">Horarios</h5>
+                    <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
+                    <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
+                    <p class="m-0">Festivos: Consulta la cartelera</p>
+                </div>
+
+                <!-- Columna 3: Enlaces a redes sociales -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 fw-bold text-center footer-heading">Redes Sociales</h5>
+                    <div class="d-flex justify-content-center mb-3">
+                        <a href="#"><img src="img/instagram.svg" alt="Instagram" class="logopie"></a>
+                        <a href="#"><img src="img/facebook.svg" alt="Facebook" class="logopie"></a>
+                        <a href="#"><img src="img/x4.svg" alt="X" class="logopie"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 mt-4 footer-bottom">
+            &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
+        </div>
+    </footer>
+
 </body>
 
 </html>
