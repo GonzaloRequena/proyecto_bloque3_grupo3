@@ -1,0 +1,276 @@
+/* ======================= 1. Variables y Fuentes ======================= */
+
+/* Definición de variables CSS para colores */
+:root {
+    --dark-blue: #0f172a; 
+    --light-blue: #38bdf8; 
+    --text-color: #f8fafc; 
+    --secondary-dark: #1e293b; 
+    --shadow-color: rgba(56, 189, 248, 0.4); 
+}
+
+/* Importación de fuentes */
+@font-face {
+    font-family: 'Nunito'; /* Fuente para texto normal */
+    src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MachineStd'; /* Fuente para titulares y elementos destacados */
+    src: url('../fonts/MachineStd.otf') format('truetype');
+    font-style: normal;
+}
+
+/* ======================= 2. Estilos globales ======================= */
+
+body {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column; /* Asegura que el footer se empuje hacia abajo */
+    font-family: 'Nunito', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ======================= 3. Encabezado y navegación (Header/Navbar) ======================= */
+
+/* Contenedor del encabezado */
+.sticky-header {
+    position: sticky; /* Fija el encabezado en la parte superior al hacer scroll */
+    top: 0;
+    z-index: 1020; /* Se le da mucho valor en el eje Z para garantizar que quede por encima de otros elementos */
+}
+
+/* Estilos del componente Navbar de Bootstrap */
+.navbar {
+    background-color: var(--secondary-dark);
+    border-bottom: 3px solid var(--light-blue);
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+/* Estilo para el icono del menú hamburguesa */
+.navbar-toggler-icon {
+    filter: invert(1); /* Invierte el color del icono */
+}
+
+/* Efecto hover en los enlaces de navegación */
+.nav-link:hover {
+    color: var(--light-blue) !important;
+    opacity: 0.9; 
+}
+
+/* ======================= 4. Estilos de secciones y títulos ======================= */
+
+/* Estilos para los títulos principales de sección */
+.section-heading {
+    border-color: var(--light-blue) !important;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* Estilo para el contenedor del reestreno */
+.seccion-reestreno {
+    /* Fondo con imagen y un gradiente lineal oscuro superpuesto (overlay) para hacer el texto más legible */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/jumanjiFondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--light-blue);
+}
+
+/* Título principal dentro del reestreno */
+.reestreno-titulo {
+    color: var(--light-blue);
+    font-family: 'MachineStd', sans-serif;
+    font-size: 4rem;
+}
+
+/* Estilo para el botón de compra de entradas del reestreno */
+.reestreno-btn {
+    background-color: var(--light-blue) !important;
+    border-color: var(--light-blue) !important;
+    color: var(--dark-blue) !important; 
+    animation: pulse-glow 2s infinite alternate; /* Aplica la animación pulse */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efecto hover en el botón de reestreno */
+.reestreno-btn:hover {
+    background-color: #3dccff !important;
+    border-color: #3dccff !important;
+    transform: translateY(-2px); /* Eleva un poco el botón */
+    animation: none; /* Detiene la animación al pasar el ratón */
+}
+
+/* Definición de la animación pulse */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 5px var(--light-blue), 0 0 10px var(--shadow-color);
+    }
+    100% {
+        box-shadow: 0 0 20px var(--light-blue), 0 0 30px var(--shadow-color);
+    }
+}
+
+/* ======================= 5. Carrusel de promociones ======================= */
+
+/* Estilos generales para cada ítem del carrusel */
+.carousel-item {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid var(--light-blue);
+}
+
+/* Estilos individuales para los fondos de cada promoción (Imagen + Overlay Oscuro) */
+#promo1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/promo1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+}
+
+#promo2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/promo2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+}
+
+#promo3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/promo3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+}
+
+#promo4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/promo4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+}
+
+/* Estilo para los títulos de las promociones */
+.promo-titulo {
+    color: var(--light-blue);
+    font-family: 'MachineStd', sans-serif;
+    font-size: 3rem;
+}
+
+/* Estilo para los iconos de control del carrusel (anterior y siguiente) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.8;
+}
+
+/* ======================= 6. Cartelera (Tarjetas de películas) ======================= */
+
+/* Contenedor de la tarjeta de la película */
+.movie-card {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--light-blue);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar la etiqueta de preestreno/reestreno por encima */
+}
+
+/* Efecto hover en la tarjeta */
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Efecto de elevación y ampliación */
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+/* Estilo de la imagen de la portada dentro de la tarjeta */
+.movie-card img {
+    height: 350px; /* Altura fija para mantener bien el grid */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    width: 100%;
+}
+
+/* Estilo para el título de la película */
+.movie-title {
+    color: var(--light-blue); 
+    font-family: 'MachineStd', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Estilo para el texto de información secundaria (género, duración) */
+.movie-info-text {
+    color: var(--text-color) !important;
+}
+
+/* Estilo general para las etiquetas de Preestreno/Reestreno */
+.movie-badge {
+    position: absolute;
+    top: 85px; /* Posicionamiento vertical */
+    left: -30px; /* Posicionamiento horizontal */
+    padding: 5px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transform: rotate(-45deg); /* Rotación de la etiqueta */
+    transform-origin: 0% 0%; /* Origen de la rotación en la esquina superior izquierda */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Modificador de color para la etiqueta de PREESTRENO */
+.movie-badge.preestreno {
+    background-color: #ffc107;
+    color: var(--dark-blue);
+}
+
+/* Modificador de color para la etiqueta de REESTRENO */
+.movie-badge.reestreno {
+    background-color: #dc3545;
+    color: var(--text-color);
+}
+
+/* ======================= 7. Pie de página (Footer) ======================= */
+
+footer {
+    background-color: var(--secondary-dark);
+    border-top: 3px solid var(--light-blue);
+    padding: 1.5rem 0;
+    margin-top: auto; /* Empuja el footer al final de la página (gracias al flex-direction: column en body) */
+}
+
+/* Estilos de encabezados en el footer */
+.footer-heading {
+    color: var(--light-blue);
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+    margin-bottom: 0.75rem !important;
+}
+
+/* Estilos de texto en el footer */
+footer p {
+    margin-bottom: 0.4rem !important;
+}
+
+/* Estilo para los logos de redes sociales */
+.logopie {
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+/* Estilo para la franja inferior de derechos de autor */
+.footer-bottom {
+    padding: 0.5rem !important;
+    margin-top: 1rem !important;
+}
