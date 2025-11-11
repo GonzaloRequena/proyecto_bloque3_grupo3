@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Esto es una aplicación web ">
+        <meta name="keywords" content="OpenWebinars, 2DAM, bootstrap">
+        <meta name="author" content="Pilar Parra">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/promociones.css">
+        <link rel="stylesheet" href="css/combo.css">
+        <title>Promociones</title>
+    </head>
+    <body>
+        <!-- ======================= HEADER / NAVBAR ======================= -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo y Nombre del Cine -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="img/logo2.png" alt="Logo Cines La Cúpula" width="auto" height="40"
+                            class="d-inline-block align-text-top me-2">
+                    </a>
+
+                    <!-- Botón de Hamburguesa (para dispositivos pequeños) -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                    </button>
+
+                    <!-- Enlaces de Navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cartelera">Cartelera</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ======================= MAIN CONTENT ======================= -->
+        <main>
+            <section class="combos-section container">
+                <div class="row align-items-center mb-3">
+                    <div class="col">
+                        <h2 class="combo-title mb-0">Combos</h2>
+                    </div>
+                    <div class="col-auto">
+                        <a href="promociones.html" class="btn btn-outline-secondary">← Volver</a>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="row justify-content-center g-4">
+
+                        <!-- Combo 1 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/MiniTrailer.png" alt="Combo Mini Trailer">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Mini Trailer</h4>
+                                            <p class="combo-price">4,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas pequeñas</li>
+                                            <li>🥤 Refresco pequeño</li>
+                                        </ul>
+                                        <p class="mt-2">Ligero y práctico para disfrutar de una sesión individual.</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combo 2 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/CorteClasico.png" alt="Combo Clasico">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Corte Clásico</h4>
+                                            <p class="combo-price">7,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas medianas</li>
+                                            <li>🥤 Refresco mediano</li>
+                                        </ul>
+                                        <p class="mt-2">Perfecto para disfrutar del mejor sabor.</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Combo 3 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/DobleFuncion.png" alt="Combo Dúo Doble Función">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Doble Función</h4>
+                                            <p class="combo-price">9,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 2 Palomitas medianas</li>
+                                            <li>🥤 2 Refrescos medianos</li>
+                                        </ul>
+                                        <p class="mt-2">Ideal para disfrutar juntos la función.</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combo 4 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/EstrenoFamiliar.png" alt="Combo Estreno Familiar">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Estreno Familiar</h4>
+                                            <p class="combo-price">12,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas grandes</li>
+                                            <li>🥤 2 Refrescos medianos</li>
+                                        </ul>
+                                        <p class="mt-2">El toque salado para disfrutar de tu película en familia.</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combo 5 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/ComboBlockbuster2.PNG" alt="Combo BlockBuster">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">BlockBuster</h4>
+                                            <p class="combo-price">15,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas grandes</li>
+                                            <li>🥤 2 Refrescos medianos</li>
+                                            <li>🍕 Plato salado a elegir</li>
+                                        </ul>
+                                        <p class="mt-2">Atrévete a lo grande. El combo que te dejará sin hambre. ¡La experiencia completa!</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combo 6 -->
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/ComboAvatarEdicionDeluxe.png" alt="Combo Edición Deluxe Avatar">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Edición Deluxe Avatar</h4>
+                                            <p class="combo-price">18,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas grandes</li>
+                                            <li>🥤 Refresco mediano</li>
+                                        </ul>
+                                        <p class="mt-2">Disfruta del mejor sabor y llévate tu vaso favorito. ¡Brilla en la oscuridad!</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combo 7 -->   
+                        <div class="col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+
+                                    <!-- Frente -->
+                                    <div class="flip-card-front d-flex flex-column">
+                                        <img src="img/ComboJumanjiEdicionDeluxe.png" alt="Combo Edición Deluxe JumanJi">
+                                        <div class="card-body text-center">
+                                            <h4 class="combo-title">Edición Deluxe JumanJi</h4>
+                                            <p class="combo-price">18,90€</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Reverso -->
+                                    <div class="flip-card-back">
+                                        <h4>Incluye</h4>
+                                        <ul class="list-unstyled">
+                                            <li>🍿 Palomitas grandes</li>
+                                            <li>🥤 Refresco mediano</li>
+                                        </ul>
+                                        <p class="mt-2">Para que además de disfrutar de tu sesión te lleves el cubo de tu peli favorita.</p>
+                                        <a href="taquillaPrecio.html" class="btn btn-custom mt-2">Añadir al pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- ======================= FOOTER ======================= -->
+        <footer>
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <!-- Columna 1: Información de Contacto -->
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Cines La Cúpula</h5>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+                    </div>
+
+                    <!-- Columna 2: Horarios -->
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Horarios</h5>
+                        <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
+                        <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
+                        <p class="m-0">Festivos: Consulta la cartelera</p>
+                    </div>
+
+                    <!-- Columna 3: Enlaces Rápidos -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Secciones</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="cartelera.html" class="text-white text-decoration-none">Cartelera</a></li>
+                            <li><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+                            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+                &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
+            </div>
+        </footer>
+    </body>
+</html>

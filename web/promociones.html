@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esto es una aplicación web ">
+    <meta name="keywords" content="OpenWebinars, 2DAM, bootstrap">
+    <meta name="author" content="Pilar Parra">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/promociones.css">
+    <title>Promociones</title>
+</head>
+<body>
+    <!-- ======================= HEADER / NAVBAR ======================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo y Nombre del Cine -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo2.png" alt="Logo Cines La Cúpula" width="auto" height="40"
+                        class="d-inline-block align-text-top me-2">
+                </a>
+
+                <!-- Botón de Hamburguesa (para dispositivos pequeños) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+
+                <!-- Enlaces de Navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cartelera">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main>
+        <section class="promo-section container">
+        <h2 class="promo-title">Promociones LaCúpula</h2>
+
+        <div class="row g-4 justify-content-center">
+            <!-- 1. REESTRENO -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/jumanji.jpeg" alt="Reestreno Jumanji">
+                    <div class="card-body">
+                        <h5 class="card-title">Reestreno de JumanJi</h5>
+                        <p class="card-text">Revive la clásica película de JumanJi en pantalla grande a precio especial. ¡Solo por tiempo limitado!</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#reestrenoModal">Comprar entradas</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL REESTRENO -->
+            <div class="modal fade" id="reestrenoModal" tabindex="-1" aria-labelledby="reestrenoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/jumanji.jpeg" alt="Reestreno Jumanji">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="reestrenoModalLabel">¡Vuelve la aventura más salvaje al cine!</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Prepárate para el <strong class="texto-destacado">reestreno exclusivo de Jumanji</strong> en los cines LaCúpula.</p>
+                            <p>Una oportunidad única para revivir la jungla, los desafíos y la diversión en pantalla grande.</p>
+                            <p>Compra tus entradas online o en taquilla y sumérgete de nuevo en el mundo de Jumanji.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. PREESTRENO -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/avatar.jpg" alt="Preestreno Avatar3">
+                    <div class="card-body">
+                        <h5 class="card-title">Avatar en Preestreno</h5>
+                        <p class="card-text">Sé de los primeros en disfrutar el estreno de Avatar: Fuego y Cenizas. ¡Entradas limitadas!</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#preestrenoModal">Comprar entradas</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL PREESTRENO -->
+            <div class="modal fade" id="preestrenoModal" tabindex="-1" aria-labelledby="preestrenoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/avatar.jpg" alt="Preestreno Avatar3">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="preestrenoModalLabel">¡La espera ha terminado!</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Llega el <strong class="texto-destacado">preestreno exclusivo de Avatar: Fuego y Cenizas</strong> a los cines LaCúpula.</p>
+                            <p>Sumérgete de nuevo en Pandora y vive una experiencia visual que te dejará sin aliento. <strong class="texto-destacado">¡El fuego y la aventura te esperan!</strong></p>
+                            <p>Compra tus entradas online o en taquilla y sé de los primeros en descubrir el nuevo capítulo de Avatar.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. FIESTA DEL CINE -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/FiestaDelCine.png" alt="Fiesta del Cine">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiesta del Cine</h5>
+                        <p class="card-text">Entradas a precios reducidos para celebrar la pasión por el cine. ¡No te la pierdas!</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#fiestaModal">Más info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL FIESTA DEL CINE-->
+            <div class="modal fade" id="fiestaModal" tabindex="-1" aria-labelledby="fiestaModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/FiestaDelCine.png" alt="Fiesta del cine">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="fiestaModalLabel">Fiesta del Cine</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Durante tres días podrás disfrutar todas las películas y tu combo de palomitas por solo <strong class="texto-destacado">6,90 €</strong> cada entrada.</p>
+                            <p>Apunta las fechas: del <strong class="texto-destacado">17 al 20 de Noviembre</strong> en todos los cines LaCúpula.</p>
+                            <p>Compra tus entradas online o en taquilla y celebra el cine con nosotros.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. PROMO 4 ENTRADAS -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/PromoEntradas.png" alt="Promo 4 entradas">
+                    <div class="card-body">
+                        <h5 class="card-title">Pack Familiar</h5>
+                        <p class="card-text">Disfruta 4 entradas a un precio reducido. Ideal para venir en grupo o familia.</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#promoModal">Aprovechar promo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL PROMO ENTRADAS -->
+            <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/PromoEntradas.png" alt="Promo 4 entradas">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="promoModalLabel">¡El fin de semana, el cine se vive en grupo!</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Consigue <strong class="texto-destacado">4 entradas por solo 19,90€</strong> y disfruta cualquier película en los cines LaCúpula. ¡Haz que tu finde sea de película!</p>
+                            <p>Una oportunidad única para compartir risas, emociones y palomitas… <strong class="texto-destacado">¡a precio de estreno!</strong></p>
+                            <p><strong class="texto-destacado">Unidades limitadas </strong>¡no te quedes sin la tuya!</p>
+                            <p>Compra disponible solo en taquilla online.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. SORTEO -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/Sorteo.png" alt="Sorteo">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorteo Mensual</h5>
+                        <p class="card-text">Participa y gana entradas gratis, combos y más sorpresas. ¡Participa ya!</p>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#sorteoModal">Participar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL SORTEO -->
+            <div class="modal fade" id="sorteoModal" tabindex="-1" aria-labelledby="sorteoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <img src="img/Sorteo.png" alt="Sorteo">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="sorteoModalLabel">¡Tu entrada al cine puede darte mucho más que una película!</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Al adquirir tu entrada junto a un combo <strong class="texto-destacado">Estreno Familiar, Blockbuster o Edición Deluxe, </strong> recibirás un <strong class="texto-destacado">rasca y gana exclusivo.</strong></p>
+                            <p>¡Descubre al instante si has ganado uno de nuestros premios estrella!</p>
+                            <p><strong class="texto-destacado">Premios increíbles:</strong></p></p>
+                            <ul class="list-unstyled">
+                                <li>🎟️ 5 estancias premium para 2 personas</li>
+                                <li>🎟️ 1 PlayStation 5</li> 
+                                <li>🎟️ 1 Nintendo Switch 2</li>    
+                                <li>🎟️ 1 iPhone 17</li> 
+                                <li>🎟️ 10 entradas dobles con combo Corte Clásico</li>
+                                <li>🎟️ 50 tarjetas regalo de 20€</li>
+                                <li>🎟️ 100 combos Mini Trailer</li>
+                                <li>Y muchas otras sorpresas que harán que tu visita al cine sea inolvidable.</li>
+                            </ul>    
+                            <p>Compra tu entrada + combo, rasca… <strong class="texto-destacado">¡y gana al momento!</strong></p> 
+                            <p>El cine nunca fue tan emocionante.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <a href="taquillaPrecio.html" class="btn btn-custom">Comprar entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. COMBOS -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="img/CorteClasico.png" alt="Combo Comida">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo para abrir el apetito</h5>
+                        <p class="card-text">Palomitas y refresco por solo <strong>4,90 €</strong>. ¡El combo ideal para tu película!</p>
+                        <button class="btn btn-custom"><a href="combo.html" class="no-link">Ver combos</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- ======================= FOOTER ======================= -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Columna 1: Información de Contacto -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Cines La Cúpula</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Mayor, 45, 28001 Madrid</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contacto@cineslacupula.es</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+34 91 555 1234</p>
+                </div>
+
+                <!-- Columna 2: Horarios -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Horarios</h5>
+                    <p class="m-0">Lunes a Jueves: 16:00 - 23:00</p>
+                    <p class="m-0">Viernes a Domingo: 12:00 - 01:00</p>
+                    <p class="m-0">Festivos: Consulta la cartelera</p>
+                </div>
+
+                <!-- Columna 3: Enlaces Rápidos -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: var(--light-blue);">Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="cartelera.html" class="text-white text-decoration-none">Cartelera</a></li>
+                        <li><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2025 Cines La Cúpula. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>

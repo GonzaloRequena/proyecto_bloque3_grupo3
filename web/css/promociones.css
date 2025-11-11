@@ -1,0 +1,95 @@
+    .promo-section {
+        padding: 60px 0;
+    }
+
+/* === ESTILO TITULO === */
+
+    .promo-title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: var(--light-blue);
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+/* === ESTILOS CARD === */
+
+    .card {
+        background-color: #10294d;
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+/* === ESTILO IMAGEN CARD === */
+
+    .card img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+/* === ESTILO BOTONES === */
+
+    .btn-custom {
+        background-color: var(--light-blue);
+        color: white;
+        border-radius: 25px;
+    }
+
+    .btn-custom:hover {
+        background-color: #0090dd;
+    }
+
+/* No deja marcado el enlace cuando se pincha en él */
+
+    .no-link {
+    color: inherit; /* hereda el color del texto */
+    text-decoration: none; /* quita el subrayado */
+    }
+
+/* === ESTILO MODAL === */
+
+    .modal-content {
+        background-color:#10294d; 
+        color:white; 
+        border-radius:15px; 
+        overflow:hidden"
+    }
+
+    .modal-content img {
+        object-fit:cover; 
+        height:520px;
+    }
+
+    .modal.fade .modal-content img {
+    transform: scale(0.98);
+    transition: transform 0.4s ease;
+    }
+    .modal.show .modal-content img {
+    transform: scale(1);
+    }
+
+/* === ESTILO PARA DESTACAR TEXTO === */
+
+    .texto-destacado {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--light-blue);
+    }
+
+@media (max-width: 576px) {
+    .promo-title {
+    font-size: 1.6rem;
+    }
+    .card img {
+    height: 180px;
+    }
+}
