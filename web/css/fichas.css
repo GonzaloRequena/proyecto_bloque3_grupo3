@@ -32,7 +32,9 @@ body {
   background-color: var(--secondary-dark); /* Fondo del menú de navegación. */
   border-bottom: 3px solid var(--light-blue); /* Línea de acento en la parte inferior. */
 }
-
+.navbar-toggler-icon {
+    filter: invert(1); /* Invierte el color del icono */
+}
 /* Estilos para el logo y los enlaces de navegación. */
 .navbar-brand,
 .nav-link {
@@ -189,7 +191,10 @@ img.img-fluid {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
+/*Logos redes*/
+.logopie {
+    width: 50px;
+}
 /* Estilos redundantes eliminados en la optimización anterior, pero restaurados para la revisión. */
 .detalles {
   color:white
