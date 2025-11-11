@@ -1,186 +1,77 @@
-    .combos-section {
-      padding: 60px 0;
-    }
+  .combos-section {
+    padding: 60px 0;
+  }
 
-    .combo-title {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #bce0ff;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
+  .combo-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--light-blue);
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
 
-    .combo-item {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      background-color: #10294d;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+  }
 
-    .combo-item:hover {
-      transform: translateY(-5px);
-    }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
 
-    .combo-item img {
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      object-fit: cover;
-    }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 
-    .combo-content {
-      flex: 1;
-      padding: 25px;
-    }
+  /* Caras del flip */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    background-color: #10294d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
 
-    .combo-content h4 {
-      color: #bce0ff;
-      font-weight: 600;
-    }
+  /* Frente */
+  .flip-card-front img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius:15px;
+  }
 
-    .combo-content p {
-      color: #e4e4e4;
-      margin-top: 10px;
-      font-size: 0.95rem;
-    }
+  /* Reverso */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: var(--secondary-dark);
+  }
 
-    .combo-price {
-      font-size: 1.3rem;
-      color: #00aaff;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+  .texto-destacado {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--light-blue);
+  }
 
-
-    .flip-card {
-  background-color: transparent;
-  width: 100%;
-  max-width: 320px;
-  height: 360px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Caras del flip */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  background-color: #10294d;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-}
-
-/* Frente */
-.flip-card-front img {
-  height: 180px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-/* Reverso */
-.flip-card-back {
-  transform: rotateY(180deg);
-  background-color: #0a1830;
-}
-
-.texto-destacado {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #00bfff;
-}
-
-/* Precio */
-.combo-price {
-  font-size: 1.2rem;
-  margin-top: 8px;
-  color: #00bfff;
-}
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  max-width: 320px;
-  height: 360px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Caras del flip */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  background-color: #10294d;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-}
-
-/* Frente */
-.flip-card-front img {
-  height: 180px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-/* Reverso */
-.flip-card-back {
-  transform: rotateY(180deg);
-  background-color: #0a1830;
-}
-
-.texto-destacado {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #00bfff;
-}
-
-/* Precio */
-.combo-price {
-  font-size: 1.2rem;
-  margin-top: 8px;
-  color: #00bfff;
-}
+  /* Precio */
+  .combo-price {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    color: var(--light-blue);
+  }
